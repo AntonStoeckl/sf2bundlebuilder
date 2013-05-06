@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="mvs_sample.ormrepositoryfactory.class">Mvs\SampleBundle\Factory\ORMRepositoryFactory</parameter>
+        <parameter key="mvs_sample.productrepository.class">Mvs\SampleBundle\Repository\ProductRepository</parameter>
+        <parameter key="mvs_sample.productrepository.name">MvsSampleBundle:Product</parameter>
+        <parameter key="mvs_sample.productbizmodel.class">Mvs\SampleBundle\BizModel\Product</parameter>
+    </parameters>
+
+    <services>
+        <service id="mvs_sample.ormrepositoryfactory" class="%mvs_sample.ormrepositoryfactory.class%">
+            <argument type="service" id="doctrine" />
+        </service>
+
+        <service id="mvs_sample.productrepository"
+                 class="%mvs_sample.productrepository.class%"
+                 factory-service="mvs_sample.ormrepositoryfactory"
+                 factory-method="getRepository">
+            <argument>%mvs_sample.productrepository.name%</argument>
+        </service>
+
+        <service id="mvs_sample.productbizmodel" class="%mvs_sample.productbizmodel.class%">
+            <argument type="service" id="mvs_sample.productrepository" />
+        </service>
+    </services>
+</container>

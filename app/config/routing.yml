@@ -1,0 +1,4 @@
+mvs_sample:
+    resource: "@MvsSampleBundle/Resources/config/routing.xml"
+    prefix:   /
+
