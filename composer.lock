@@ -3,8 +3,52 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "572a1fdc693ab624a092e4ff17f643de",
+    "hash": "18cb06be4c9e4f0a86ab1e86a40c4ef2",
     "packages": [
+        {
+            "name": "antonstoeckl/zf1sf2bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AntonStoeckl/zf1sf2bundle.git",
+                "reference": "170cb702dd816e41f872592a387d89eef3dd6440"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AntonStoeckl/zf1sf2bundle/zipball/170cb702dd816e41f872592a387d89eef3dd6440",
+                "reference": "170cb702dd816e41f872592a387d89eef3dd6440",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-bundle": "1.2.*",
+                "doctrine/orm": ">=2.2.3,<2.4-dev",
+                "jms/di-extra-bundle": "1.3.*",
+                "php": ">=5.4.6",
+                "stof/doctrine-extensions-bundle": "dev-master",
+                "symfony/monolog-bundle": "2.2.*",
+                "symfony/symfony": "dev-master"
+            },
+            "type": "project",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mvs": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Test bundle to be integrated into a ZF1 project",
+            "support": {
+                "source": "https://github.com/AntonStoeckl/zf1sf2bundle/tree/master",
+                "issues": "https://github.com/AntonStoeckl/zf1sf2bundle/issues"
+            },
+            "time": "2013-05-06 13:02:40"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.1.1",
@@ -82,12 +126,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "b5716ea776f349a0fedcf0e7d032386c1f696f76"
+                "reference": "4116eff37635219101a22c9732f409633eb07c5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/b5716ea776f349a0fedcf0e7d032386c1f696f76",
-                "reference": "b5716ea776f349a0fedcf0e7d032386c1f696f76",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/4116eff37635219101a22c9732f409633eb07c5d",
+                "reference": "4116eff37635219101a22c9732f409633eb07c5d",
                 "shasum": ""
             },
             "require": {
@@ -130,7 +174,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -140,7 +184,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2013-03-17 13:59:02"
+            "time": "2013-05-04 23:23:40"
         },
         {
             "name": "doctrine/collections",
@@ -196,7 +240,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -266,7 +310,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -289,12 +333,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "ac0c0630e63ae5b3c569996aac8f174a74ba599b"
+                "reference": "faacbe7fcb324101d80739ab91aae98d004344f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/ac0c0630e63ae5b3c569996aac8f174a74ba599b",
-                "reference": "ac0c0630e63ae5b3c569996aac8f174a74ba599b",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/faacbe7fcb324101d80739ab91aae98d004344f4",
+                "reference": "faacbe7fcb324101d80739ab91aae98d004344f4",
                 "shasum": ""
             },
             "require": {
@@ -344,7 +388,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-05-01 17:16:27"
+            "time": "2013-05-04 12:09:27"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -353,12 +397,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "80a7198c470d74755db64aa3f75898f3808778b7"
+                "reference": "9218b4116e86b1d278564b8550fb2f53eb400093"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/80a7198c470d74755db64aa3f75898f3808778b7",
-                "reference": "80a7198c470d74755db64aa3f75898f3808778b7",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/9218b4116e86b1d278564b8550fb2f53eb400093",
+                "reference": "9218b4116e86b1d278564b8550fb2f53eb400093",
                 "shasum": ""
             },
             "require": {
@@ -414,7 +458,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2013-04-30 09:04:17"
+            "time": "2013-05-04 07:57:29"
         },
         {
             "name": "doctrine/inflector",
@@ -468,7 +512,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -547,12 +591,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "6063fe4adf3b1d8c0d608f103f55a5562a579391"
+                "reference": "209090d338b2bacf2a7fbde3c57fe51702d1b295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/6063fe4adf3b1d8c0d608f103f55a5562a579391",
-                "reference": "6063fe4adf3b1d8c0d608f103f55a5562a579391",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/209090d338b2bacf2a7fbde3c57fe51702d1b295",
+                "reference": "209090d338b2bacf2a7fbde3c57fe51702d1b295",
                 "shasum": ""
             },
             "require": {
@@ -609,7 +653,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-05-01 09:01:17"
+            "time": "2013-05-04 11:39:37"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -617,12 +661,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "e4ede013a1dff69c82db5035d5028f2798c770c3"
+                "reference": "9ff77bf1a13b3847a09e1dcf6d7e27cdeab89f6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/e4ede013a1dff69c82db5035d5028f2798c770c3",
-                "reference": "e4ede013a1dff69c82db5035d5028f2798c770c3",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/9ff77bf1a13b3847a09e1dcf6d7e27cdeab89f6b",
+                "reference": "9ff77bf1a13b3847a09e1dcf6d7e27cdeab89f6b",
                 "shasum": ""
             },
             "require": {
@@ -688,7 +732,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-05-02 17:52:38"
+            "time": "2013-05-04 12:20:35"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1137,12 +1181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "b264026cba83b4f02ebea7d908a6340a9fd010ac"
+                "reference": "1eed379a3b7c31f698e49fa7a822a536e94c31f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/b264026cba83b4f02ebea7d908a6340a9fd010ac",
-                "reference": "b264026cba83b4f02ebea7d908a6340a9fd010ac",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1eed379a3b7c31f698e49fa7a822a536e94c31f5",
+                "reference": "1eed379a3b7c31f698e49fa7a822a536e94c31f5",
                 "shasum": ""
             },
             "require": {
@@ -1191,7 +1235,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-04-24 15:45:58"
+            "time": "2013-05-03 09:05:12"
         },
         {
             "name": "phpoption/phpoption",
@@ -1380,12 +1424,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensio/SensioGeneratorBundle.git",
-                "reference": "v2.3.0-BETA1"
+                "reference": "77ce71d2741af3536d846791182315a42e00b89c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensio/SensioGeneratorBundle/zipball/v2.3.0-BETA1",
-                "reference": "v2.3.0-BETA1",
+                "url": "https://api.github.com/repos/sensio/SensioGeneratorBundle/zipball/77ce71d2741af3536d846791182315a42e00b89c",
+                "reference": "77ce71d2741af3536d846791182315a42e00b89c",
                 "shasum": ""
             },
             "require": {
@@ -1419,7 +1463,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2013-04-21 11:11:08"
+            "time": "2013-05-04 14:19:26"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -1485,16 +1529,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "dev-master",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "a64528efec37173a6dabaedb0e678beffdb446f0"
+                "reference": "v5.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/a64528efec37173a6dabaedb0e678beffdb446f0",
-                "reference": "a64528efec37173a6dabaedb0e678beffdb446f0",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/v5.0.0",
+                "reference": "v5.0.0",
                 "shasum": ""
             },
             "require": {
@@ -1530,7 +1574,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2013-04-30 17:36:15"
+            "time": "2013-04-30 17:35:30"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -1762,12 +1806,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "6a4100c615d6e5c955bda426b0fe1bb52e0a514c"
+                "reference": "4196fea0906f0c9769181c3a4b8cb30e227b417f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/6a4100c615d6e5c955bda426b0fe1bb52e0a514c",
-                "reference": "6a4100c615d6e5c955bda426b0fe1bb52e0a514c",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/4196fea0906f0c9769181c3a4b8cb30e227b417f",
+                "reference": "4196fea0906f0c9769181c3a4b8cb30e227b417f",
                 "shasum": ""
             },
             "require": {
@@ -1821,6 +1865,7 @@
                 "doctrine/orm": ">=2.2,<3.0,>=2.2.3",
                 "ircmaxell/password-compat": "1.0.*",
                 "monolog/monolog": ">=1.3,<2.0",
+                "ocramius/proxy-manager": ">=0.3.1,<0.4-dev",
                 "propel/propel1": "1.6.*"
             },
             "type": "library",
@@ -1860,7 +1905,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-05-03 05:07:18"
+            "time": "2013-05-06 09:55:27"
         },
         {
             "name": "twig/extensions",
@@ -1915,12 +1960,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "7f70bbf77581c25a5b225823e2dde578b63fddb3"
+                "reference": "b8a8701b6c2957a365b8596f55684679627d7cfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/7f70bbf77581c25a5b225823e2dde578b63fddb3",
-                "reference": "7f70bbf77581c25a5b225823e2dde578b63fddb3",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/b8a8701b6c2957a365b8596f55684679627d7cfb",
+                "reference": "b8a8701b6c2957a365b8596f55684679627d7cfb",
                 "shasum": ""
             },
             "require": {
@@ -1956,7 +2001,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-05-01 19:03:39"
+            "time": "2013-05-06 06:36:47"
         }
     ],
     "packages-dev": [
@@ -1971,7 +2016,7 @@
         "stof/doctrine-extensions-bundle": 20
     },
     "platform": {
-        "php": ">=5.3.3"
+        "php": ">=5.4.6"
     },
     "platform-dev": [
 
