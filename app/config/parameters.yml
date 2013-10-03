@@ -1,10 +1,10 @@
 parameters:
     database_driver:   pdo_mysql
-    database_host:     127.0.0.1
+    database_host:     localhost
     database_port:     ~
-    database_name:     zf1sf2bundle
-    database_user:     mvs
-    database_password: mvs
+    database_name:     zf2_cache_integration
+    database_user:     tony
+    database_password: tony
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1
