@@ -21,7 +21,8 @@
         "jms/security-extra-bundle": "dev-master",
         "jms/di-extra-bundle": "dev-master",
         "stof/doctrine-extensions-bundle": "dev-master",
-        "zendframework/zend-cache": "dev-master"
+        "zendframework/zend-cache": "dev-master",
+        "zendframework/zend-serializer": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
