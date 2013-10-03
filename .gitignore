@@ -6,3 +6,4 @@
 /composer.phar
 .idea
 atlassian-ide-plugin.xml
+composer.lock
