@@ -18,11 +18,31 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('astoeckl_zf2cache');
+        $rootNode = $treeBuilder->root('zf2cache');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode
+            ->children()
+                ->arrayNode('adapter')
+                    ->children()
+                        ->scalarNode('name')->end()
+                        ->arrayNode('options')
+                            ->children()
+                                ->arrayNode('servers')
+                                    ->prototype('scalar')->end()
+                                ->end()
+                                ->scalarNode('namespace')->end()
+                                ->scalarNode('ttl')->end()
+                            ->end()
+                        ->end()
+                    ->end()
+                ->end()
+                ->arrayNode('plugins')
+                    ->children()
+                        ->arrayNode('exception_handler')->end()
+                        ->prototype('scalar')->end()
+                    ->end()
+                ->end()
+            ->end();
 
         return $treeBuilder;
     }

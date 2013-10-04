@@ -20,28 +20,12 @@ class Product
      * The constructor.
      *
      * @param ProductRepositoryInterface $repository
+     * @param StorageInterface $cache
      */
-    public function __construct(ProductRepositoryInterface $repository)
+    public function __construct(ProductRepositoryInterface $repository, StorageInterface $cache)
     {
         $this->productRepository = $repository;
-
-        $this->cache = StorageFactory::factory(array(
-                'adapter' => array(
-                    'name' => 'memcached',
-                    'options' => array(
-                        'servers' => array('localhost'),
-                        'namespace' => 'db-table-product',
-                        'ttl' => 30,
-                    ),
-                ),
-                'plugins' => array(
-                    // Don't throw exceptions on cache errors
-                    'exception_handler' => array(
-                        'throw_exceptions' => false
-                    ),
-                    'Serializer'
-                )
-            ));
+        $this->cache = $cache;
     }
 
     /**

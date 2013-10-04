@@ -25,6 +25,7 @@
 
         <service id="mvs_sample.productbizmodel" class="%mvs_sample.productbizmodel.class%">
             <argument type="service" id="mvs_sample.productrepository" />
+            <argument type="service" id="zf2cache.storage.adapter" />
         </service>
     </services>
 </container>

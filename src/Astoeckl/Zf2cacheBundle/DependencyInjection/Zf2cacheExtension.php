@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class AstoecklZf2cacheExtension extends Extension
+class Zf2cacheExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -24,5 +24,12 @@ class AstoecklZf2cacheExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
+
+        if (!empty($config)) {
+            $container->setParameter(
+                'zf2cache.storage.config',
+                $config
+            );
+        }
     }
 }

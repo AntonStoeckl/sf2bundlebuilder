@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Mvs\SampleBundle\MvsSampleBundle(),
+            new Astoeckl\Zf2cacheBundle\Zf2cacheBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
